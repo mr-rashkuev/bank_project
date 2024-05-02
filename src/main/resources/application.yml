@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  liquibase:
+    change-log: classpath:db.changelog/changelog-master.yml
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank_project
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1234
+
+  jpa:
+    show-sql: true
+
